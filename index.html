@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link 
+        rel="preconnect" 
+        href="https://fonts.gstatic.com"
+        crossorigin>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Roboto:wght@400;500;700&display=swap" 
+        rel="stylesheet">
+</head>
+<body>
+    <div class="bground">
+        <div class="calculator">
+            <h1>CALCULATOR</h1>
+            <div class="screen">
+                <p id="anws" maxlen ></p>
+            </div>
+            <table>
+                <tr>
+                    <td><button class="Cbutton" onclick="clean()"><b>C</b></button></td>
+                    <td><button class="Cbutton" onclick="back()"<b><</b></button></td>
+                    <td><button class="Cbutton" onclick="insert('/')"><b>/</b></button></td>
+                    <td><button class="Cbutton" onclick="insert('*')"><b>X</b></button></td>
+                </tr>
+                <tr>
+                    <td><button class="Cbutton" onclick="insert('7')"><b>7</b></button></td>
+                    <td><button class="Cbutton" onclick="insert('8')"><b>8</b></button></td>
+                    <td><button class="Cbutton" onclick="insert('9')"><b>9</b></button></td>
+                    <td><button class="Cbutton" onclick="insert('-')"><b>-</b></button></td>
+                </tr>
+                <tr>
+                    <td><button class="Cbutton" onclick="insert('4')"><b>4</b></button></td>
+                    <td><button class="Cbutton" onclick="insert('5')"><b>5</b></button></td>
+                    <td><button class="Cbutton" onclick="insert('6')"><b>6</b></button></td>
+                    <td><button class="Cbutton" onclick="insert('+')"><b>+</b></button></td>
+                </tr>
+                <tr>
+                    <td><button class="Cbutton" onclick="insert('1')"><b>1</b></button></td>
+                    <td><button class="Cbutton" onclick="insert('2')"><b>2</b></button></td>
+                    <td><button class="Cbutton" onclick="insert('3')"><b>3</b></button></td>
+                    <td rowspan="2"><button class="Cbutton" id="equal" onclick="calc()"><b>=</b></button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="Cbutton" id="zero" onclick="insert('0')"><b>0</b></button></td>
+                    <td><button class="Cbutton" onclick="insert('.')"><b>.</b></button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
